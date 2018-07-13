@@ -3,13 +3,12 @@ import { CommonModule } from "@angular/common";
 import { CardsService } from '../shared/model/cards.service';
 import { Card } from '../shared/model/card';
 
-
 @Component({
-  selector: 'app-list-task',
-  templateUrl: './list-task.component.html',
-  styleUrls: ['./list-task.component.css']
+  selector: 'quiz',
+  templateUrl: './quiz.component.html',
+  styleUrls: ['./quiz.component.css']
 })
-export class ListTaskComponent implements OnInit {
+export class QuizComponent implements OnInit {
 
   @Input() public cards:Card[];
 
@@ -24,8 +23,6 @@ export class ListTaskComponent implements OnInit {
     );
   }
 
-  onClickRemove(currentCardKey){
-    this.cardsService.removeCard(currentCardKey);
-  }
+  
 
 }

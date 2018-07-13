@@ -6,10 +6,10 @@ export const environment = {
   production: false,
   firebase: {
     apiKey: "AIzaSyBu2T5wasoBRQAQ91rimlWRCUq59axwwGw",
-    authDomain: "codehandbook-9e097.firebaseapp.com",
-    databaseURL: "https://codehandbook-9e097.firebaseio.com",
+    authDomain: "flashcardapp-8d76d.firebaseapp.com",
+    databaseURL: "https://flashcardapp-8d76d.firebaseio.com",
     projectId: "flashcardapp-8d76d",
-    storageBucket: "codehandbook-9e097.appspot.com",
+    storageBucket: "flashcardapp-8d76d.appspot.com",
     messagingSenderId: "345302105438"
   }
 

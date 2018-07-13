@@ -1,13 +1,28 @@
-<div class="wrapper">
-  <ul class="list-group">
-    <li class="list-group-item d-flex justify-content-between align-items-center">
-    Cras justo odio
-    </li>
-    <li class="list-group-item d-flex justify-content-between align-items-center">
-    Dapibus ac facilisis in
-    </li>
-    <li class="list-group-item d-flex justify-content-between align-items-center">
-    Morbi leo risus
-    </li>
-  </ul>
-</div>
+<h1>Total Cards: {{cards?.length||0}}</h1>
+<table class="wrapper">
+  <tr>
+    <td class = "question">
+      <h2>Question</h2>
+    </td>
+    <td class = "answer">
+      <h2>Answer</h2>
+    </td>
+  </tr>
+  <tr></tr><tr></tr>
+  <tr *ngFor="let card of cards" >
+    <td class = "question">
+      <p>{{card.question}}</p>
+    </td>
+    <td> 
+        <p>{{card.answer}}</p>
+    </td>
+    <td class = "button">
+      <button type="button" (click)="onClickRemove(card.key)">Remove Card</button>
+    </td>
+    
+    <pre>
+     <!-- {{ card | json }}-->
+    </pre>
+  </tr>
+  <hr>
+</table>
